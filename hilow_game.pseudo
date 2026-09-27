@@ -1,0 +1,38 @@
+## IT-140 M4 Course Assignment: Pseudocode for Higher/Lower Game
+
+PRINT "Welcome to the higher/lower game, Bella!"
+
+SET min number and max number valid to FALSE
+
+WHILE min number and max number valid is FALSE
+    READ min number from user
+    READ max number from user
+
+    IF min number is less than max number THEN
+        SET min number and max number valid to TRUE
+
+    ELSE
+        PRINT "The lower bound must be less than the upper bound."
+
+GENERATE random number between min number and max number
+
+PRINT prompt to guess a number between min number and max number
+READ the users guess
+
+WHILE user guess is not equal to random number
+
+    WHILE user guess is less than min number OR user guess is greater than max number
+        PRINT "Incorrect guess. Please enter a number in range."
+        READ the users guess
+
+    IF user guess is less than random number THEN
+        PRINT "Nope, too low."
+        PRINT "Guess another number:"
+        READ the users guess
+
+    ELSE IF user guess is greater than random number THEN
+        PRINT "Nope, too high."
+        PRINT "Guess another number:"
+        READ the users guess
+
+PRINT "You got it, Bella!"
